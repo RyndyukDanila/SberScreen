@@ -17,10 +17,10 @@ class AppBarProfile extends StatelessWidget {
       children: [
         const Divider(),
         ProfileImage(image: profile.image),
-        const Padding(
-          padding: EdgeInsets.only(top: 36, bottom: 14),
+        Padding(
+          padding: const EdgeInsets.only(top: 36, bottom: 14),
           child: Text(
-            'Екатерина',
+            profile.name,
             style: TextStyles.profileName,
           ),
         ),

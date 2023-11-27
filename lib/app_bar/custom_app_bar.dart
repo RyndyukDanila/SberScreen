@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sber_screen/app_bar/app_bar_profile.dart';
 import 'package:sber_screen/model/profile.dart';
+import 'package:sber_screen/static/custom_colors.dart';
 import 'package:sber_screen/static/custom_icons.dart';
 import 'package:sber_screen/static/text_styles.dart';
 import 'package:sber_screen/static/ui_text.dart';
@@ -22,8 +23,8 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: Colors.white,
-      surfaceTintColor: Colors.white,
+      backgroundColor: CustomColors.background,
+      surfaceTintColor: CustomColors.background,
       toolbarHeight: 200,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -44,11 +45,11 @@ class CustomAppBar extends StatelessWidget {
       floating: true,
       forceElevated: _innerBoxIsScrolled,
       bottom: TabBar(
-        labelColor: Colors.black,
-        unselectedLabelColor: Colors.grey,
+        labelColor: CustomColors.primary,
+        unselectedLabelColor: CustomColors.secondary,
         labelStyle: TextStyles.tabLabel,
         indicatorSize: TabBarIndicatorSize.tab,
-        indicatorColor: const Color(0xFF068441),
+        indicatorColor: CustomColors.indicator,
         tabs: const <Tab>[
           Tab(
             text: UIText.profile,

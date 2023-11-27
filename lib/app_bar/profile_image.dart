@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sber_screen/static/custom_colors.dart';
 
 class ProfileImage extends StatelessWidget {
   final String image;
@@ -23,7 +24,7 @@ class ProfileImage extends StatelessWidget {
         ),
         shadows: const [
           BoxShadow(
-            color: Color(0x7A1D1D25),
+            color: CustomColors.imageShadow,
             blurRadius: 24,
             offset: Offset(0, 16),
             spreadRadius: -16,

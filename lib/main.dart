@@ -9,11 +9,14 @@ void main() {
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
-  final Profile profile = const Profile(name: 'Екатерина', image: 'assets/images/user_image.png');
+  final Profile profile = const Profile(
+    name: 'Екатерина',
+    image: 'assets/images/user_image.png',
+  );
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeScreen(profile: profile),
     );
