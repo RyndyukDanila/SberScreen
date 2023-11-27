@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sber_screen/app_bar/app_bar_profile.dart';
 import 'package:sber_screen/model/profile.dart';
+import 'package:sber_screen/static/custom_icons.dart';
 
 class HomePage extends StatefulWidget {
   final Profile profile;
@@ -40,18 +41,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: const Icon(
-                      Icons.close_rounded,
-                      color: Color(0xFF08A652),
-                    ),
+                    icon: const Image(image: CustomIcons.close),
                   ),
                   AppBarProfile(profile: profile),
                   IconButton(
                     onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_rounded,
-                      color: Color(0xFF08A652),
-                    ),
+                    icon: const Image(image: CustomIcons.arrowForward),
                   ),
                 ],
               ),
