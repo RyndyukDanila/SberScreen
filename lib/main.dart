@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sber_screen/home_page.dart';
+import 'package:sber_screen/model/profile.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: HomePage(profile: profile),
     );
   }
 }

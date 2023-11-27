@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:sber_screen/app_bar_profile.dart';
+import 'package:sber_screen/app_bar/app_bar_profile.dart';
+import 'package:sber_screen/model/profile.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  final Profile profile;
+
+  const HomePage({
+    super.key,
+    required this.profile,
+  });
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -39,7 +45,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                       color: Color(0xFF08A652),
                     ),
                   ),
-                  AppBarProfile(),
+                  AppBarProfile(profile: profile),
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
