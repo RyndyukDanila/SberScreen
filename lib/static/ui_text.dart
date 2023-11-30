@@ -1,5 +1,5 @@
 import 'package:sber_screen/model/card_content.dart';
-import 'package:sber_screen/model/operation.dart';
+import 'package:sber_screen/model/tariff_content.dart';
 import 'package:sber_screen/static/custom_icons.dart';
 
 sealed class UIText {
@@ -21,19 +21,22 @@ sealed class UIText {
       subtitle: "199 ₽ в месяц",
     ),
   ];
-  static const String tarifTitle = "Тарифы и лимиты";
-  static const String tarifSubtitle = "Для операций в Сбербанк Онлайн";
-  static List<Operation> operationsList = [
-    Operation(
+  static const String tariffTitle = "Тарифы и лимиты";
+  static const String tariffSubtitle = "Для операций в Сбербанк Онлайн";
+  static List<TariffContent> tariffList = [
+    TariffContent(
+      image: CustomIcons.limit,
       title: "Изменить суточный лимит",
       subtitle: "На платежи и переводы",
     ),
-    Operation(
+    TariffContent(
+      image: CustomIcons.percent,
       title: "Переводы без комиссии",
       subtitle: "Показать остаток в этом месяце",
     ),
-    Operation(
-      title: "Информация о тарифахи лимитах",
+    TariffContent(
+      image: CustomIcons.arrows,
+      title: "Информация о тарифах и лимитах",
       subtitle: null,
     ),
   ];

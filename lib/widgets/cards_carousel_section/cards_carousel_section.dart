@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sber_screen/static/ui_text.dart';
-import 'package:sber_screen/widgets/cards_carousel/carousel_scroll.dart';
+import 'package:sber_screen/widgets/cards_carousel_section/carousel_scroll.dart';
 import 'package:sber_screen/widgets/section_header.dart';
 
 class CardsCarousel extends StatelessWidget {
@@ -9,6 +9,7 @@ class CardsCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SectionHeader(
           title: UIText.connectedTitle,

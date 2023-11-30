@@ -49,4 +49,18 @@ sealed class TextStyles {
     fontWeight: FontWeight.w500,
     letterSpacing: -0.41,
   );
+  static const TextStyle listItemPrimary = TextStyle(
+    color: CustomColors.primary,
+    fontSize: 16,
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+    letterSpacing: -0.40,
+  );
+  static final TextStyle listItemSecondary = TextStyle(
+    color: CustomColors.secondary,
+    fontSize: 14,
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+    letterSpacing: -0.41,
+  );
 }

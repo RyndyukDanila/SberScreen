@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sber_screen/widgets/cards_carousel/cards_carousel.dart';
+import 'package:sber_screen/widgets/cards_carousel_section/cards_carousel_section.dart';
+import 'package:sber_screen/widgets/tariff_list_section/tariff_list_section.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -12,6 +13,7 @@ class ProfilePage extends StatelessWidget {
       ),
       children: const [
         CardsCarousel(),
+        TariffListSection(),
       ],
     );
   }

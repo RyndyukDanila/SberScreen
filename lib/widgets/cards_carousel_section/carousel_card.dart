@@ -69,7 +69,7 @@ class CarouselCard extends StatelessWidget {
                   style: TextStyles.cardTitle,
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 2,
                 ),
                 Text(
                   cardContent.subtitle,

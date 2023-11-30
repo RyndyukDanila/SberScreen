@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sber_screen/model/card_content.dart';
-import 'package:sber_screen/widgets/cards_carousel/carousel_card.dart';
+import 'package:sber_screen/widgets/cards_carousel_section/carousel_card.dart';
 
 class CarouselScroll extends StatelessWidget {
   final List<CardContent> cardsContent;
