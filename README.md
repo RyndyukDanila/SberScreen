@@ -4,6 +4,18 @@
 
 Использованная технология: Flutter
 
+## Как запускать?
+- Flutter 3.16.0
+- Dart 3.2.0
+- Android Studio (version 2022.3)
+- Android toolchain (SDK 33.0.1)
+- VS Code (version 1.84.2)
+  
+|1st                     |2nd                       |
+|:----------------------------:|:---------------------------:|
+|<img src="https://github.com/RyndyukDanila/SberScreen/assets/79106632/018a5743-fdc5-407c-82df-03f4928b890e" width="450">|<img src="https://github.com/RyndyukDanila/SberScreen/assets/79106632/d466a8a5-e9db-4350-ae56-f6ee6e749f36" width="450">|
+
+
 ## Как выглядит экран на реальном устройстве c Android 10, SDK API 29 (Samsung A7)
 |1st                     |2nd                       |video                       |
 |:----------------------------:|:---------------------------:|:---------------------------:|
