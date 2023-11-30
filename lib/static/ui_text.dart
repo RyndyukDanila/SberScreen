@@ -36,7 +36,7 @@ sealed class UIText {
     ),
     TariffContent(
       image: CustomIcons.arrows,
-      title: "Информация о тарифах и лимитах",
+      title: "Информация о тарифах \nи лимитах",
       subtitle: null,
     ),
   ];

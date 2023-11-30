@@ -63,4 +63,11 @@ sealed class TextStyles {
     fontWeight: FontWeight.w500,
     letterSpacing: -0.41,
   );
+  static const TextStyle tagText = TextStyle(
+    color: CustomColors.primary,
+    fontSize: 14,
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+    letterSpacing: -0.41,
+  );
 }

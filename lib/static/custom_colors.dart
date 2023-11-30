@@ -8,4 +8,5 @@ sealed class CustomColors {
   static const Color indicator = Color(0xFF068441);
   static const Color cardShadowPrimary = Color(0x114F4F6C);
   static const Color cardShadowSecondary = Color(0x14000000);
+  static final Color tagBackground = Colors.black.withOpacity(0.07999999821186066);
 }

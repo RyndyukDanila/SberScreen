@@ -13,7 +13,7 @@ class TariffList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 192,
+      height: 226,
       child: ListView.separated(
         physics: const NeverScrollableScrollPhysics(),
         separatorBuilder: (context, index) => const Divider(
