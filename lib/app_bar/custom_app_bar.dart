@@ -45,6 +45,7 @@ class CustomAppBar extends StatelessWidget {
       floating: true,
       forceElevated: _innerBoxIsScrolled,
       bottom: TabBar(
+        isScrollable: false,
         labelColor: CustomColors.primary,
         unselectedLabelColor: CustomColors.secondary,
         labelStyle: TextStyles.tabLabel,
