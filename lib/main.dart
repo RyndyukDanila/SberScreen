@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sber_screen/home_screen.dart';
+import 'package:sber_screen/model/profile.dart';
 
 void main() {
   runApp(const MainApp());
@@ -7,14 +9,16 @@ void main() {
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
+  final Profile profile = const Profile(
+    name: 'Екатерина',
+    image: 'assets/images/user_image.png',
+  );
+
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(profile: profile),
     );
   }
 }
